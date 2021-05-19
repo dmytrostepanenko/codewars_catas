@@ -16,7 +16,8 @@ public class ReverseWords {
         for (i = strArray.length - 1; i > 0; i--) {
             reversedStr += String.format("%s ", strArray[i]);
         }
-        reversedStr += strArray[i];
+        reversedStr += strArray[i]; // вместо этой строки можно использовать reversedStr.trim() -
+        // обрезает лишние пробелы впереди и в конце
         return reversedStr;
     }
 }
